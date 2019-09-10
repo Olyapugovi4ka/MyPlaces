@@ -29,14 +29,16 @@ class MainViewController: UITableViewController {
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
-
-       cell.textLabel?.text = restauants[indexPath.row]
-      cell.imageView?.image = UIImage(named: restauants[indexPath.row])
-
+        
+        cell.nameLabel.text = restauants[indexPath.row]
+        cell.imageOfPlace.image = UIImage(named: restauants[indexPath.row])
+        cell.imageOfPlace.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
+        cell.imageView?.clipsToBounds = true
+        
         return cell
     }
-  
-
+    
+    
     /*
     // MARK: - Navigation
 
@@ -46,5 +48,8 @@ class MainViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    //MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
+    }
 }
