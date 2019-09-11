@@ -6,19 +6,20 @@
 //  Copyright © 2019 MacBook. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Place {
     var name: String
-    var location: String
-    var type: String
-    var image: String
+    var location: String?
+    var type: String?
+    var image: UIImage?
+    var restaurantImage: String?
     
     static let restaurants = ["Ollis", "Zenit", "Dodo Pizza"]
     static func getPlaces() -> [Place] {
         var places = [Place]()
         for place in restaurants {
-            places.append(Place(name: place, location: "Spb", type: "Restaurant", image: place))
+            places.append(Place(name: place, location: "Spb", type: "Restaurant", image: nil, restaurantImage: place))
         }
         
         return places
