@@ -16,6 +16,10 @@
 		FA45D7A72328159400B19927 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D7A62328159400B19927 /* MainViewController.swift */; };
 		FA45D7A92328161700B19927 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D7A82328161700B19927 /* PlaceModel.swift */; };
 		FA45D7AB2328163300B19927 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */; };
+		FAC77A1A232CEC0C006FC67F /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC77A19232CEC0C006FC67F /* Cosmos.framework */; };
+		FAC77A1C232D407F006FC67F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC77A1B232D407E006FC67F /* MapViewController.swift */; };
+		FAEA8416232980E00058C610 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA8415232980E00058C610 /* StorageManager.swift */; };
+		FAEE86C3232C1331008ECB7F /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE86C2232C1330008ECB7F /* RatingControl.swift */; };
 		FAF953B423281B76009418EE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF953B323281B76009418EE /* RealmSwift.framework */; };
 		FAF953B623281B7B009418EE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF953B523281B7B009418EE /* Realm.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,10 @@
 		FA45D7A62328159400B19927 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA45D7A82328161700B19927 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
+		FAC77A19232CEC0C006FC67F /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC77A1B232D407E006FC67F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FAEA8415232980E00058C610 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		FAEE86C2232C1330008ECB7F /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		FAF953B323281B76009418EE /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF953B523281B7B009418EE /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC77A1A232CEC0C006FC67F /* Cosmos.framework in Frameworks */,
 				FAF953B623281B7B009418EE /* Realm.framework in Frameworks */,
 				FAF953B423281B76009418EE /* RealmSwift.framework in Frameworks */,
 				435201873724C417E1A2E655 /* Pods_MyPlaces.framework in Frameworks */,
@@ -64,6 +73,7 @@
 		BADB8BAFA4AC718E65BB39F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAC77A19232CEC0C006FC67F /* Cosmos.framework */,
 				FAF953B523281B7B009418EE /* Realm.framework */,
 				FAF953B323281B76009418EE /* RealmSwift.framework */,
 				E564FB53BF2E7A899103C26F /* Pods_MyPlaces.framework */,
@@ -93,11 +103,14 @@
 			isa = PBXGroup;
 			children = (
 				FA45D792232813AC00B19927 /* AppDelegate.swift */,
+				FAEE86C2232C1330008ECB7F /* RatingControl.swift */,
+				FAEA8415232980E00058C610 /* StorageManager.swift */,
 				FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */,
 				FA45D7A82328161700B19927 /* PlaceModel.swift */,
 				FA45D7A62328159400B19927 /* MainViewController.swift */,
 				FA45D7A4232814F100B19927 /* CustomTableViewCell.swift */,
 				FA45D796232813AC00B19927 /* Main.storyboard */,
+				FAC77A1B232D407E006FC67F /* MapViewController.swift */,
 				FA45D799232813AE00B19927 /* Assets.xcassets */,
 				FA45D79B232813AE00B19927 /* LaunchScreen.storyboard */,
 				FA45D79E232813AE00B19927 /* Info.plist */,
@@ -220,11 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEE86C3232C1331008ECB7F /* RatingControl.swift in Sources */,
 				FA45D7A72328159400B19927 /* MainViewController.swift in Sources */,
 				FA45D7A92328161700B19927 /* PlaceModel.swift in Sources */,
 				FA45D7AB2328163300B19927 /* NewPlaceViewController.swift in Sources */,
+				FAEA8416232980E00058C610 /* StorageManager.swift in Sources */,
 				FA45D7A5232814F100B19927 /* CustomTableViewCell.swift in Sources */,
 				FA45D793232813AC00B19927 /* AppDelegate.swift in Sources */,
+				FAC77A1C232D407F006FC67F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

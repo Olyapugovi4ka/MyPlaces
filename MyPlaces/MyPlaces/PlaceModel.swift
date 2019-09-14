@@ -6,22 +6,25 @@
 //  Copyright © 2019 MacBook. All rights reserved.
 //
 
-import UIKit
 
-struct Place {
-    var name: String
-    var location: String?
-    var type: String?
-    var image: UIImage?
-    var restaurantImage: String?
+import RealmSwift
+
+class Place: Object {
     
-    static let restaurants = ["Ollis", "Zenit", "Dodo Pizza"]
-    static func getPlaces() -> [Place] {
-        var places = [Place]()
-        for place in restaurants {
-            places.append(Place(name: place, location: "Spb", type: "Restaurant", image: nil, restaurantImage: place))
-        }
+    @objc dynamic var name: String = ""
+    @objc dynamic var location: String?
+    @objc dynamic var type: String?
+    @objc dynamic var imageData: Data?
+    @objc dynamic var date = Date()
+      @objc dynamic var rating = 0.0
+    
+    convenience init(name:String, location: String?, type: String?, imageData: Data?, rating: Double){
+        self.init()
+        self.name = name
+        self.location = location
+        self.type = type
+        self.imageData = imageData
+        self.rating = rating
         
-        return places
     }
 }
