@@ -18,6 +18,7 @@
 		FA45D7AB2328163300B19927 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */; };
 		FAC77A1A232CEC0C006FC67F /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC77A19232CEC0C006FC67F /* Cosmos.framework */; };
 		FAC77A1C232D407F006FC67F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC77A1B232D407E006FC67F /* MapViewController.swift */; };
+		FAC77A1E232E322A006FC67F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC77A1D232E322A006FC67F /* CoreLocation.framework */; };
 		FAEA8416232980E00058C610 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA8415232980E00058C610 /* StorageManager.swift */; };
 		FAEE86C3232C1331008ECB7F /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE86C2232C1330008ECB7F /* RatingControl.swift */; };
 		FAF953B423281B76009418EE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF953B323281B76009418EE /* RealmSwift.framework */; };
@@ -40,6 +41,7 @@
 		FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		FAC77A19232CEC0C006FC67F /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC77A1B232D407E006FC67F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FAC77A1D232E322A006FC67F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FAEA8415232980E00058C610 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		FAEE86C2232C1330008ECB7F /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		FAF953B323281B76009418EE /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC77A1E232E322A006FC67F /* CoreLocation.framework in Frameworks */,
 				FAC77A1A232CEC0C006FC67F /* Cosmos.framework in Frameworks */,
 				FAF953B623281B7B009418EE /* Realm.framework in Frameworks */,
 				FAF953B423281B76009418EE /* RealmSwift.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		BADB8BAFA4AC718E65BB39F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAC77A1D232E322A006FC67F /* CoreLocation.framework */,
 				FAC77A19232CEC0C006FC67F /* Cosmos.framework */,
 				FAF953B523281B7B009418EE /* Realm.framework */,
 				FAF953B323281B76009418EE /* RealmSwift.framework */,
