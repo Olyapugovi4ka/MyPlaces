@@ -136,6 +136,10 @@ class NewPlaceViewController: UITableViewController {
         dismiss(animated: true)
     }
     
+    deinit {
+        print("deinit", NewPlaceViewController.self)
+    }
+    
 }
 //MARK: - text field delegate
 extension NewPlaceViewController: UITextFieldDelegate {
@@ -151,6 +155,8 @@ extension NewPlaceViewController: UITextFieldDelegate {
             saveButton.isEnabled = false
         }
     }
+    
+   
 }
 //MARK: - work with image
 extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

@@ -19,6 +19,7 @@
 		FAC77A1A232CEC0C006FC67F /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC77A19232CEC0C006FC67F /* Cosmos.framework */; };
 		FAC77A1C232D407F006FC67F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC77A1B232D407E006FC67F /* MapViewController.swift */; };
 		FAC77A1E232E322A006FC67F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC77A1D232E322A006FC67F /* CoreLocation.framework */; };
+		FAD2C4212333A8C7008B0C46 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C4202333A8C7008B0C46 /* MapManager.swift */; };
 		FAEA8416232980E00058C610 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA8415232980E00058C610 /* StorageManager.swift */; };
 		FAEE86C3232C1331008ECB7F /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE86C2232C1330008ECB7F /* RatingControl.swift */; };
 		FAF953B423281B76009418EE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF953B323281B76009418EE /* RealmSwift.framework */; };
@@ -42,6 +43,7 @@
 		FAC77A19232CEC0C006FC67F /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC77A1B232D407E006FC67F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FAC77A1D232E322A006FC67F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAD2C4202333A8C7008B0C46 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		FAEA8415232980E00058C610 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		FAEE86C2232C1330008ECB7F /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		FAF953B323281B76009418EE /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,20 +108,61 @@
 		FA45D791232813AC00B19927 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				FA45D792232813AC00B19927 /* AppDelegate.swift */,
-				FAEE86C2232C1330008ECB7F /* RatingControl.swift */,
-				FAEA8415232980E00058C610 /* StorageManager.swift */,
-				FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */,
-				FA45D7A82328161700B19927 /* PlaceModel.swift */,
-				FA45D7A62328159400B19927 /* MainViewController.swift */,
-				FA45D7A4232814F100B19927 /* CustomTableViewCell.swift */,
-				FA45D796232813AC00B19927 /* Main.storyboard */,
-				FAC77A1B232D407E006FC67F /* MapViewController.swift */,
-				FA45D799232813AE00B19927 /* Assets.xcassets */,
-				FA45D79B232813AE00B19927 /* LaunchScreen.storyboard */,
-				FA45D79E232813AE00B19927 /* Info.plist */,
+				FAD2C4222333F0F0008B0C46 /* ViewControllers */,
+				FAD2C4242333F146008B0C46 /* Helpers */,
+				FAD2C4232333F13A008B0C46 /* Models */,
+				FAD2C4252333F169008B0C46 /* Support Files */,
+				FAD2C4262333F195008B0C46 /* IBuilder */,
 			);
 			path = MyPlaces;
+			sourceTree = "<group>";
+		};
+		FAD2C4222333F0F0008B0C46 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D7A62328159400B19927 /* MainViewController.swift */,
+				FA45D7AA2328163300B19927 /* NewPlaceViewController.swift */,
+				FAC77A1B232D407E006FC67F /* MapViewController.swift */,
+				FA45D7A4232814F100B19927 /* CustomTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAD2C4232333F13A008B0C46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D7A82328161700B19927 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAD2C4242333F146008B0C46 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAEE86C2232C1330008ECB7F /* RatingControl.swift */,
+				FAEA8415232980E00058C610 /* StorageManager.swift */,
+				FAD2C4202333A8C7008B0C46 /* MapManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAD2C4252333F169008B0C46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D79E232813AE00B19927 /* Info.plist */,
+				FA45D799232813AE00B19927 /* Assets.xcassets */,
+				FA45D792232813AC00B19927 /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		FAD2C4262333F195008B0C46 /* IBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D796232813AC00B19927 /* Main.storyboard */,
+				FA45D79B232813AE00B19927 /* LaunchScreen.storyboard */,
+			);
+			path = IBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +284,7 @@
 				FA45D7A72328159400B19927 /* MainViewController.swift in Sources */,
 				FA45D7A92328161700B19927 /* PlaceModel.swift in Sources */,
 				FA45D7AB2328163300B19927 /* NewPlaceViewController.swift in Sources */,
+				FAD2C4212333A8C7008B0C46 /* MapManager.swift in Sources */,
 				FAEA8416232980E00058C610 /* StorageManager.swift in Sources */,
 				FA45D7A5232814F100B19927 /* CustomTableViewCell.swift in Sources */,
 				FA45D793232813AC00B19927 /* AppDelegate.swift in Sources */,
@@ -393,7 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y46MAFM54;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y46MAFM54;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

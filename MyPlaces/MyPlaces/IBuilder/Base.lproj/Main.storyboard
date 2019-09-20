@@ -99,16 +99,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dmt-US-6C7">
-                                                    <rect key="frame" x="15.999999999999993" y="7.9999999999999964" width="105.33333333333331" height="62.666666666666657"/>
+                                                    <rect key="frame" x="16" y="7.9999999999999964" width="319" height="62.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcC-OL-gWw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="105.33333333333333" height="29"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="319" height="29"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vha-E1-dGl">
-                                                            <rect key="frame" x="0.0" y="37" width="105.33333333333333" height="25.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="37" width="319" height="25.666666666666671"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
@@ -118,12 +118,13 @@
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jv-zp-tPh">
-                                                    <rect key="frame" x="129.33333333333331" y="46.666666666666664" width="22" height="22"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jv-zp-tPh">
+                                                    <rect key="frame" x="343" y="45.666666666666664" width="24" height="23.999999999999993"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="80u-VX-MN1"/>
+                                                        <constraint firstAttribute="height" constant="24" id="75I-Vq-aDK"/>
+                                                        <constraint firstAttribute="width" constant="24" id="Egn-5d-QPT"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="Placeholder"/>
+                                                    <state key="normal" image="Placeholder"/>
                                                     <connections>
                                                         <segue destination="X3x-O6-lNh" kind="presentation" identifier="getAddress" id="j83-W5-ruD"/>
                                                     </connections>
@@ -131,11 +132,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dmt-US-6C7" firstAttribute="top" secondItem="EaL-JA-U6y" secondAttribute="top" constant="8" id="0Y5-Ob-0Dv"/>
-                                                <constraint firstItem="9Jv-zp-tPh" firstAttribute="centerY" secondItem="vha-E1-dGl" secondAttribute="centerY" id="4Yg-WG-Ace"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Jv-zp-tPh" secondAttribute="trailing" constant="8" id="T9j-R5-XHQ"/>
+                                                <constraint firstItem="9Jv-zp-tPh" firstAttribute="leading" secondItem="dmt-US-6C7" secondAttribute="trailing" constant="8" id="XL5-1W-O3W"/>
                                                 <constraint firstAttribute="bottom" secondItem="dmt-US-6C7" secondAttribute="bottom" constant="4" id="isO-Qa-HaC"/>
-                                                <constraint firstAttribute="trailing" secondItem="9Jv-zp-tPh" secondAttribute="trailing" id="nf4-sS-Gz6"/>
                                                 <constraint firstItem="dmt-US-6C7" firstAttribute="leading" secondItem="EaL-JA-U6y" secondAttribute="leading" constant="16" id="ojG-D1-nm1"/>
-                                                <constraint firstItem="9Jv-zp-tPh" firstAttribute="leading" secondItem="dmt-US-6C7" secondAttribute="trailing" constant="8" id="y9V-we-oPa"/>
+                                                <constraint firstItem="9Jv-zp-tPh" firstAttribute="centerY" secondItem="vha-E1-dGl" secondAttribute="centerY" id="xPh-iz-BuO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

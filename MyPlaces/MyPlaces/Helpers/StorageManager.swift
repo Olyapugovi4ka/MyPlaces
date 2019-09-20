@@ -23,4 +23,8 @@ class StorageManager {
         }
         
     }
+    
+    deinit {
+        print("deinit", StorageManager.self)
+    }
 }

@@ -86,7 +86,9 @@ class MapViewController: UIViewController {
         }
     }
     
-  
+    deinit {
+        print("deinit", MapViewController.self)
+    }
     
 }
 extension MapViewController: MKMapViewDelegate{
@@ -150,6 +152,8 @@ extension MapViewController: MKMapViewDelegate{
         renderer.strokeColor = .blue
         return renderer
     }
+    
+   
     
 }
 extension MapViewController : CLLocationManagerDelegate{
